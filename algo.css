@@ -1,0 +1,47 @@
+
+/*Estilo al encabezado de la página*/
+.header{
+    background-color: lavender;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    padding: 5px 10%;
+}
+
+.logo img{
+    margin: auto;
+    height: 50px;
+    width: auto;
+    transition: all 0.3s;
+}
+.logo img:hover{/*Animación*/
+    transform: scale(1.2);
+}
+
+/* ESTILO PARA LA BARRA DE NAVEGACIÓN */
+.header .menu-nav{
+    list-style: none;
+}
+
+/*Estilos para los elementos de la NavBar*/
+.header .menu-nav li{
+    display: inline-block;
+    height: 20px;
+    border-radius: 50px;
+    padding: 0 20px;
+    transition: all 0.3s;
+}
+.header .menu-nav li:hover{/*Animación*/
+    transform: scale(1.2);
+}
+
+/*Estilo para los anchor de los elementos de la NavBar*/
+.header .menu-nav a{
+    font-size: 500;
+    color:white;
+    text-decoration: none;
+}
+.header .menu-nav a:hover{/*Animación*/
+    color: white;
+} 
