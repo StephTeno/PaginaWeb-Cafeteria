@@ -36,42 +36,55 @@
   <body>
     <!-- Encabezado Principal (Repetible) -->
     <header class="hero">
-      section
-      <div class="hero__logo">
-        <a href="index.html" class="hero__logo-link"
-          ><img
-            src="./assets/icons/Logo.png"
-            alt="Logo"
-            class="hero__logo-link-img"
-        /></a>
-      </div>
+      <section class="hero__navBar">
+        <div class="navBar__logo">
+          <a href="index.html" class="navBar__logo-link"
+            ><img
+              src="./assets/icons/Logo.png"
+              alt="Logo"
+              class="navBar__logo-link-img"
+          /></a>
+        </div>
+  
+        <nav class="navBar__nav">
+          <ul class="navBar__nav-menu">
+            <li class="navBar__nav-menu-item">
+              <a href="index.html" class="navBar__nav-menu-item-link navBar__nav-menu-item-link--selected">Home</a>
+            </li>
+            <li class="navBar__nav-menu-item">
+              <a href="./html/menu.html" class="navBar__nav-menu-item-link">Menú</a>
+            </li>
+            <li class="navBar__nav-menu-item">
+              <a href="./html/galery.html" class="navBar__nav-menu-item-link"
+                >Galeria</a
+              >
+            </li>
+            <li class="navBar__nav-menu-item">
+              <a href="./html/about.html" class="navBar__nav-menu-item-link"
+                >About</a
+              >
+            </li>
+          </ul>
+          <a class="navBar__nav-btnContact button button--selected" href="./html/contact.html"
+            >Contacto</a
+          >
+        </nav>
+      </section>
 
-      <nav class="hero__nav">
-        <ul class="hero__nav-menu">
-          <li class="hero__nav-menu-item">
-            <a href="index.html" class="hero__nav-menu-item-link hero__nav-menu-item-link--selected">Home</a>
-          </li>
-          <li class="hero__nav-menu-item">
-            <a href="./html/menu.html" class="hero__nav-menu-item-link">Menú</a>
-          </li>
-          <li class="hero__nav-menu-item">
-            <a href="./html/galery.html" class="hero__nav-menu-item-link"
-              >Galeria</a
-            >
-          </li>
-          <li class="hero__nav-menu-item">
-            <a href="./html/about.html" class="hero__nav-menu-item-link"
-              >About</a
-            >
-          </li>
-        </ul>
-        <a class="hero__nav-btnContact button button--selected" href="./html/contact.html"
-          >Contacto</a
-        >
-      </nav>
+      <section class="hero__cover">
+        <h1 class="cover__title">Cafetería El Rincón Gatuno</h1>
+        <h3 class="cover__slogan">Tu refugio gatuno para relajarte, disfrutar y encontrar un amigo peludo.</h3>
+        <p class="cover__description">El Rincón Gatuno es una cafetería con temática de gato que ofrece un espacio acogedor donde las personas pueden disfrutar de un buen café, la compañía de gatos y un ambiente relajante. También nos dedicamos a la adopción responsable de gatos callejeros, brindándoles un espacio seguro y acogedor mientras encuentran un hogar permanente.</p>
+        <a href="./html/contact.html" class="cover__btnContact button">Contáctanos</a>
+      </section>
     </header>
 
-    <main class="main"></main>
+    <main class="main">
+      <section class="main__menu-prev"></section>
+
+
+
+    </main>
 
     <!-- Footer Principal (Repetible) -->
     <footer class="footer"></footer>

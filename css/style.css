@@ -23,20 +23,31 @@ body{
     --Text-Information-font: "Lato";
 }
 
-h1{
+h1, h3{
     font-family: var(--Title-Slogan-font), serif;
     color: var(--Title-ElementImportant-color);
-    font-size: 2.4rem;
+    font-size: 2.25rem;
 }
-h2 {
-    font-size: 1.8rem;
+
+h3 {
+    font-family: var(--Title-Slogan-font), serif;
     color: var(--Subtitle-Details-color);
+    font-size: 1.5rem;
+}
+p{
+    color: var(--BackgroundPrincipal-color);
+    font-size: 1rem;
 }
 
 /*                             HEADER                             */
-.header{
-    background-color: #2d3250;
-    height: 60px;
-    min-height: 70px;
-    padding: 0 2rem;
+.hero{
+    background-color: #77493C;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 2em;
+}
+
+.hero__navBar .navBar__logo-link-img{
+    width: 100px;
 }
