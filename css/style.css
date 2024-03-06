@@ -6,11 +6,32 @@ body{
     font-weight: 400;
     font-style: normal;
 }
-h1{
-    font-family: "Playfair Display", serif;
-    font-size: 2.4rem;
+
+:root {
+    --BackgroundPrincipal-color: #F5F5DC;
+    --Title-ElementImportant-color: #77493C;
+    --Button-CallToAction-color: #98FB98;
+    --Subtitle-Details-color: #4D3728;
+    --Link-ElementInteractive-color: #87CEEB;
+    --BackgroundSecondary-color: #F7D9F7;
+    --Input-Back-color: #D2B48C;
+    --Input-Border-Normal:#D3D3D3;
+    --Input-Border-Active: #98FB98;
+    --Input-Border-Error: #D32F2F;
+    --Input-Back-Error: #F8BBD0;
+    --Title-Slogan-font: "Playfair Display";
+    --Text-Information-font: "Lato";
 }
 
+h1{
+    font-family: var(--Title-Slogan-font), serif;
+    color: var(--Title-ElementImportant-color);
+    font-size: 2.4rem;
+}
+h2 {
+    font-size: 1.8rem;
+    color: var(--Subtitle-Details-color);
+}
 
 /*                             HEADER                             */
 .header{
