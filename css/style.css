@@ -94,3 +94,158 @@ body {
     margin: 0 auto;
   }
 }
+
+
+
+
+
+
+
+
+.form {
+  text-transform: capitalize;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 400px;
+  background-color: #355891;
+  padding: 20px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.message {
+  color: #355891;
+  font-size: 14px;
+}
+
+.flex {
+  display: flex;
+  width: 97%;
+  gap: 20px;
+}
+
+.form label {
+  position: relative;
+}
+
+.form label .input {
+  width: 95%;
+  padding: 10px 10px 20px 10px;
+  outline: 0;
+  border: 1px solid #355891;
+  border-radius: 5px;
+}
+
+.form label .input + span {
+  position: absolute;
+  left: 10px;
+  top: 15px;
+  color: #355891;
+  font-size: 0.9em;
+  cursor: text;
+  transition: 0.3s ease;
+}
+
+.form label .input:placeholder-shown + span {
+  top: 15px;
+  font-size: 0.9em;
+}
+
+.form label .input:focus + span,.form label .input:valid + span {
+  top: 30px;
+  font-size: 0.7em;
+  font-weight: 600;
+}
+
+.form label .input:valid + span {
+  color: green;
+}
+
+.input01 {
+  width: 95%;
+  padding: 10px 10px 20px 10px;
+  outline: 0;
+  border: 1px solid #355891;
+  border-radius: 5px;
+}
+
+.form label .input01 + span {
+  position: absolute;
+  left: 10px;
+  top: 50px;
+  color: #355891;
+  font-size: 0.9em;
+  cursor: text;
+  transition: 0.3s ease;
+}
+
+.form label .input01:placeholder-shown + span {
+  top: 40px;
+  font-size: 0.9em;
+}
+
+.form label .input01:focus + span,.form label .input01:valid + span {
+  top: 50px;
+  font-size: 0.7em;
+  font-weight: 600;
+}
+
+.form label .input01:valid + span {
+  color: green;
+}
+
+.fancy {
+  background-color: white;
+  border: 2px solid #355891;
+  border-radius: 10px;
+  box-sizing: border-box;
+  color: #355891;
+  cursor: pointer;
+  font-weight: 500;
+  letter-spacing: 2px;
+  padding: 8px 30px;
+  position: relative;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.fancy::before {
+  content: " ";
+  width: 1.7rem;
+  height: 2px;
+  background: #355891;
+  top: 50%;
+  left: 1.5em;
+  position: absolute;
+  transform: translateY(-50%);
+  transform: translateX(230%);
+  transform-origin: center;
+  transition: background 0.3s linear, width 0.3s linear;
+}
+
+.fancy .text {
+  font-size: 1.125em;
+  line-height: 1.33333em;
+  padding-left: 2em;
+  display: block;
+  text-align: left;
+  transition: all 0.3s ease-in-out;
+  color: #355891;
+  transform: translateX(30%);
+}
+
+.fancy:hover {
+  color: #355891;
+  background: #5f82a9;
+}
+
+.fancy:hover::before {
+  width: 1.5rem;
+  background: #355891;
+}
+
+.fancy:hover .text {
+  color: white;
+  padding-left: 1.5em;
+}

@@ -31,7 +31,7 @@
       rel="stylesheet"
     />
     <!-- Link para enlazar a la hoja de estilos -->
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="../css/style.css" />
 
     <!-- Para conectar a FontAwesome -->
     <script
@@ -90,11 +90,49 @@
       </section>
     </header>
 
+    <main class="main">
+      <form class="form">
+    
+        <div class="flex">
+            <label>
+                <input class="input" type="text" placeholder="" required="">
+                <span>first name</span>
+            </label>
+    
+            <label>
+                <input class="input" type="text" placeholder="" required="">
+                <span>last name</span>
+            </label>
+        </div>  
+                
+        <label>
+            <input class="input" type="email" placeholder="" required="">
+            <span>email</span>
+        </label> 
+            
+        <label>
+            <input class="input" placeholder="" type="tel" required="">
+            <span>contact number</span>
+        </label>
+        <label>
+            <textarea class="input01" placeholder="" rows="3" required=""></textarea>
+            <span>message</span>
+        </label>
+        
+        <button href="#" class="fancy">
+          <span class="top-key"></span>
+          <span class="text">submit</span>
+          <span class="bottom-key-1"></span>
+          <span class="bottom-key-2"></span>
+        </button>
+    </form>
+    </main>
+
     <!-- Footer Principal (Repetible) -->
     <footer class="footer">
       <div class="footer__logo">
         <img
-          src="./assets/icons/Logo.png"
+          src="../assets/icons/Logo.png"
           alt="Logo de la Cafetería"
           class="footer__logo__img"
         />
