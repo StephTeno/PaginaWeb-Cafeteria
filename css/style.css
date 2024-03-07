@@ -1,45 +1,96 @@
-body{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: "Lato",sans-serif;
-    font-weight: 400;
-    font-style: normal;
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 :root {
-    --BackgroundPrincipal-color: #F5F5DC;
-    --Title-ElementImportant-color: #77493C;
-    --Button-CallToAction-color: #98FB98;
-    --Subtitle-Details-color: #4D3728;
-    --Link-ElementInteractive-color: #87CEEB;
-    --BackgroundSecondary-color: #F7D9F7;
-    --Input-Back-color: #D2B48C;
-    --Input-Border-Normal:#D3D3D3;
-    --Input-Border-Active: #98FB98;
-    --Input-Border-Error: #D32F2F;
-    --Input-Back-Error: #F8BBD0;
-    --Title-Slogan-font: "Playfair Display";
-    --Text-Information-font: "Lato";
+  --BackgroundPrincipal-color: #f5f5dc;
+  --Title-ElementImportant-color: #77493c;
+  --Button-CallToAction-color: #98fb98;
+  --Subtitle-Details-color: #4d3728;
+  --Link-ElementInteractive-color: #87ceeb;
+  --BackgroundSecondary-color: #f7d9f7;
+  --Input-Back-color: #d2b48c;
+  --Input-Border-Normal: #d3d3d3;
+  --Input-Border-Active: #98fb98;
+  --Input-Border-Error: #d32f2f;
+  --Input-Back-Error: #f8bbd0;
+  --Title-Slogan-font: "Playfair Display";
+  --Text-Information-font: "Lato";
 }
 
 /*                             HEADER                             */
-.hero{
-    background-color: #77493C;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    padding: 2em;
-    gap: 10px;
+.hero {
+  background-color: #77493c;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 2em;
+  gap: 10px;
 }
-.hero__navBar{
-    background-color: #bf5338
-}
-
-.hero__cover{
-    background-color: #973317;
+.hero__navBar {
+  background-color: #bf5338;
 }
 
-.hero__navBar .navBar__logo-link-img{
-    width: 100px;
+.hero__cover {
+  background-color: #973317;
+}
+
+.hero__navBar .navBar__logo-link-img {
+  width: 100px;
+}
+
+
+/*                             FOOTER                             */
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__logo__img {
+  max-width: 100px;
+}
+
+.copyright {
+  margin-top: 10px;
+}
+
+.redes-sociales {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.redes-sociales li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.redes-sociales li a {
+  color: #fff;
+  font-size: 18px;
+}
+
+.redes-sociales li a:hover {
+  color: #ddd;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    text-align: center;
+  }
+
+  .logo-footer {
+    margin: 0 auto;
+  }
 }
