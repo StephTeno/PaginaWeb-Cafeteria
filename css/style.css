@@ -99,15 +99,17 @@ body {
 
 
 
+/*                             CONTACT                             */
 
 
-
+/*                             FORM                             */
+/*
 .form {
   text-transform: capitalize;
   display: flex;
   flex-direction: column;
   gap: 10px;
-  max-width: 400px;
+  max-width: 550px;
   background-color: #355891;
   padding: 20px;
   border-radius: 10px;
@@ -121,8 +123,9 @@ body {
 
 .flex {
   display: flex;
-  width: 97%;
+  width: 100%;
   gap: 20px;
+  justify-content: c;
 }
 
 .form label {
@@ -130,7 +133,7 @@ body {
 }
 
 .form label .input {
-  width: 95%;
+  width: 80%;
   padding: 10px 10px 20px 10px;
   outline: 0;
   border: 1px solid #355891;
@@ -162,15 +165,15 @@ body {
   color: green;
 }
 
-.input01 {
-  width: 95%;
+.mens {
+  width: 80%;
   padding: 10px 10px 20px 10px;
   outline: 0;
   border: 1px solid #355891;
   border-radius: 5px;
 }
 
-.form label .input01 + span {
+.form label .mens + span {
   position: absolute;
   left: 10px;
   top: 50px;
@@ -180,18 +183,18 @@ body {
   transition: 0.3s ease;
 }
 
-.form label .input01:placeholder-shown + span {
+.form label .mens:placeholder-shown + span {
   top: 40px;
   font-size: 0.9em;
 }
 
-.form label .input01:focus + span,.form label .input01:valid + span {
+.form label .mens:focus + span,.form label .mens:valid + span {
   top: 50px;
   font-size: 0.7em;
   font-weight: 600;
 }
 
-.form label .input01:valid + span {
+.form label .mens:valid + span {
   color: green;
 }
 
@@ -202,37 +205,17 @@ body {
   box-sizing: border-box;
   color: #355891;
   cursor: pointer;
-  font-weight: 500;
   letter-spacing: 2px;
   padding: 8px 30px;
-  position: relative;
   text-align: center;
   transition: all 0.3s ease-in-out;
 }
 
-.fancy::before {
-  content: " ";
-  width: 1.7rem;
-  height: 2px;
-  background: #355891;
-  top: 50%;
-  left: 1.5em;
-  position: absolute;
-  transform: translateY(-50%);
-  transform: translateX(230%);
-  transform-origin: center;
-  transition: background 0.3s linear, width 0.3s linear;
-}
-
 .fancy .text {
-  font-size: 1.125em;
-  line-height: 1.33333em;
-  padding-left: 2em;
-  display: block;
-  text-align: left;
+  font-size: 16px;
+  line-height: 16px;
   transition: all 0.3s ease-in-out;
   color: #355891;
-  transform: translateX(30%);
 }
 
 .fancy:hover {
@@ -246,6 +229,7 @@ body {
 }
 
 .fancy:hover .text {
+  font-weight: bold;
   color: white;
-  padding-left: 1.5em;
 }
+*/
