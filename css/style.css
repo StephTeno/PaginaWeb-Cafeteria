@@ -98,7 +98,7 @@ a{
   background-color: var(--Button-CallToAction-color);
 }
 
-
+/* Header del index*/
 
 .hero__cover {
   height: 60dvh;
@@ -106,30 +106,57 @@ a{
   background-color: #00000037; /* Color */
   background-blend-mode: multiply; /* Efecto */
   background-size: cover;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-  text-align: center;
   font-family: 'Playfair Display', serif;
+  display: flex;
+  align-items: center;
+}
+
+.hero__cover__texts{
+  width: 50%;
+  padding: 0 50px;
 }
 
 .cover__title{
   font-weight: bolder;
-  font-size: 2.8rem;
+  font-size: 2.5rem;
   color: #ffffff;
 }
 
 .cover__slogan{
-  font-size: 1.8rem;
+  font-size: 1.7rem;
   color: #e0c1b9;
 }
 
 .cover__description{
   color: white;
+  padding: 0;
+  font-size: 1.35rem;
+  margin-bottom: 60px;
+}
+
+.cover__btnContact{
+  outline: none;
+  color: #DAA06D;
+  padding: .5em 5em;
   text-align: center;
-  padding: 0 70px;
-  font-size: 1.2rem;
+  border: 2px dashed #DAA06D;
+  border-radius: 15px;
+  background-color: #EADDCA;
+  box-shadow: 0 0 0 4px #EADDCA, 2px 2px 4px 2px rgba(0, 0, 0, 0.5);
+  transition: .1s ease-in-out, .4s color;
+}
+
+.cover__btnContact:hover{
+  color: #EADDCA;
+  border-color: #EADDCA;
+  border-radius: 15px;
+  background-color: #DAA06D;
+  box-shadow: 0 0 0 4px #DAA06D, 2px 2px 4px 2px rgba(0, 0, 0, 0.5);
+}
+
+.cover__btnContact:active {
+  transform: translateX(0.1em) translateY(0.1em);
+  box-shadow: 0 0 0 4px #EADDCA, 1.5px 1.5px 2.5px 1.5px rgba(0, 0, 0, 0.5);
 }
 
 
@@ -174,16 +201,6 @@ a{
   color: #ddd;
 }
 
-@media (max-width: 768px) {
-  .footer {
-    text-align: center;
-  }
-
-  .logo-footer {
-    margin: 0 auto;
-  }
-}
-
 /*                              Header other pag                               */
 .cover__pag{
   height: 30dvh;
@@ -192,34 +209,112 @@ a{
   background-size: cover;
   display: flex;
   align-items: center;
-  justify-content: center;
   padding: 10px;
   text-align: center;
   font-family: 'Playfair Display', serif;
   margin-bottom: 10px;
 }
 
+.hero__cover__textss{
+  padding: 0 50px;
+}
+
 .hero__cover__menu{
   background-image: url(../assets/img/banner/menu-img.jpg);
+  background-position: center;
 }
 
 .hero__cover__gallery{
   background-image: url(../assets/img/banner/gallery-img.jpg);
+  background-position: center;
 }
 
 .hero__cover__about{
   background-image: url(../assets/img/banner/about-img.jpg);
+  background-position: center;
 }
 
 .hero__cover__contact{
   background-image: url(../assets/img/banner/contact-img.jpg);
+  background-position: center;
 }
 
+/*                              INDEX                               */
 
-/*                             CONTACT                             */
+.main__menu,
+.main__promotions,
+.main__galery,
+.main__blog,
+.main__local{
+  width: 100dvw;
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+}
+
+.main__menu__container,
+.main__promotions__container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px,1fr));
+  height: 50dvh;
+  padding: 20px;
+  gap: 15px;
+}
+
+.main__menu__title,
+.main__promotions__title,
+.main__galery__title,
+.main__blog__title{
+  text-align: center;
+  font-family: 'Playfair Display';
+  font-size: 2rem;
+}
+
+.menu__img{
+  width:100%;
+  border-radius: 10px;
+}
+
+.menu__carta{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu__carta-item{
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.main__promotions__container{
+  display: grid;
+}
+
+.promotions__card{
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  height: 500px;
+  background-color: #333;
+}
+
+.promotions__card__image{
+  align-self: center;
+  width: 90%;
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 20px;
+}
+
+/*                             CONTACT                              */
 
 
-/*                             FORM                             */
+/*                               FORM                               */
 /*
 .form {
   text-transform: capitalize;
