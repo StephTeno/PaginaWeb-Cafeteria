@@ -102,9 +102,10 @@ a{
 
 .hero__cover {
   height: 60dvh;
-  background-image: url(../assets/img/daniela-martinez-VWxtKcggW3M-unsplash.jpg); /* Imagen */
+  background-image: url(../assets/img/banner/index-img.jpg); /* Imagen */
   background-color: #00000037; /* Color */
   background-blend-mode: multiply; /* Efecto */
+  background-size: cover;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -183,9 +184,35 @@ a{
   }
 }
 
-/*                              INDEX                               */
-.menu__img{
-  width: 250px;
+/*                              Header other pag                               */
+.cover__pag{
+  height: 30dvh;
+  background-color: #4a200571; /* Color */
+  background-blend-mode: multiply; /* Efecto */
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 10px;
+}
+
+.hero__cover__menu{
+  background-image: url(../assets/img/banner/menu-img.jpg);
+}
+
+.hero__cover__gallery{
+  background-image: url(../assets/img/banner/gallery-img.jpg);
+}
+
+.hero__cover__about{
+  background-image: url(../assets/img/banner/about-img.jpg);
+}
+
+.hero__cover__contact{
+  background-image: url(../assets/img/banner/contact-img.jpg);
 }
 
 
