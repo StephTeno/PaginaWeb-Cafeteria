@@ -5,6 +5,11 @@ body {
   font-family: "Lato", sans-serif;
   font-weight: 400;
   font-style: normal;
+  background-color: var(--BackgroundPrincipal-color);
+}
+
+a{
+  text-decoration: none;
 }
 
 :root {
@@ -25,25 +30,107 @@ body {
 
 /*                             HEADER                             */
 .hero {
-  background-color: #77493c;
   display: flex;
   flex-direction: column;
+}
+
+
+.hero__navBar{
+  background-color: transparent;
+  height: 65px;
+  min-height: 70px;
+  padding: 5px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.hero__navBar__logo .navBar__logo-link{
+  display: flex;
+  align-items: center;
+}
+
+.hero__navBar__logo .navBar__logo-link-img{
+  width: 70px;
+}
+
+.hero__navBar__nav{
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.hero__navBar__nav .navBar__nav-menu{
+  list-style: none;
+  display: inherit;
+  gap: inherit;
+}
+
+.navBar__nav-menu-item-link,
+.button-btn{
+  color: var(--Subtitle-Details-color);
+  font-weight: 600;
+  padding: 10px 15px;
+  border-radius: 10px;
+  position: relative;
+}
+.navBar__nav-menu-item-link::before,
+.button-btn::before{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
   width: 100%;
-  max-width: 1440px;
-  padding: 2em;
-  gap: 10px;
+  height: 2px;
+  background-color: var(--Subtitle-Details-color);
+  z-index: 1;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: all 0.3s ease-in-out;
 }
-.hero__navBar {
-  background-color: #bf5338;
+
+.navBar__nav-menu-item-link:hover::before,
+.button-btn:hover::before{
+  transform: scaleX(1);
 }
+
+.button-btn:hover::before{
+  background-color: var(--Button-CallToAction-color);
+}
+
+
 
 .hero__cover {
-  background-color: #973317;
+  height: 60dvh;
+  background-image: url(../assets/img/daniela-martinez-VWxtKcggW3M-unsplash.jpg); /* Imagen */
+  background-color: #00000037; /* Color */
+  background-blend-mode: multiply; /* Efecto */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+  font-family: 'Playfair Display', serif;
 }
 
-.hero__navBar .navBar__logo-link-img {
-  width: 100px;
+.cover__title{
+  font-weight: bolder;
+  font-size: 2.8rem;
+  color: #ffffff;
 }
+
+.cover__slogan{
+  font-size: 1.8rem;
+  color: #e0c1b9;
+}
+
+.cover__description{
+  color: white;
+  text-align: center;
+  padding: 0 70px;
+  font-size: 1.2rem;
+}
+
 
 
 /*                             FOOTER                             */
@@ -96,8 +183,10 @@ body {
   }
 }
 
-
-
+/*                              INDEX                               */
+.menu__img{
+  width: 250px;
+}
 
 
 /*                             CONTACT                             */
