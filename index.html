@@ -173,11 +173,14 @@
         <h2 class="main__promotions__title">Promociones</h2>
         <div class="main__promotions__container">
           <div class="promotions__card">
-            <img
+            <figure class="promotions__card__figure__image">
+              <img
               src="./assets/img/promotions/capuchino.jpg"
               alt="Foto sobre una taza de capuchino"
               class="promotions__card__image"
-            />
+              /> 
+            </figure>
+            
             <h3 class="promotions__card__title">Café Capuchino</h3>
             <p class="promotions__card__paragraph paragraph">
               Espuma de leche y café en perfecta armonía.
@@ -185,11 +188,14 @@
             <span class="promotions__card__price">C$60.00 </span>
           </div>
           <div class="promotions__card">
-            <img
+            <figure class="promotions__card__figure__image">
+              <img
               src="./assets/img/promotions/limonada-fresas.jpg"
               alt="Foto sobre un vaso de limonada con fresas"
               class="promotions__card__image"
-            />
+              />
+            </figure>
+            
             <h3 class="promotions__card__title">Limonada con Fresa</h3>
             <p class="promotions__card__paragraph paragraph">
               Natural y vitaminado, para un boost de energía.
@@ -197,11 +203,14 @@
             <span class="promotions__card__price">C$30.00</span>
           </div>
           <div class="promotions__card">
-            <img
+            <figure class="promotions__card__figure__image">
+              <img
               src="./assets/img/promotions/pay-limon.jpg"
               alt="Foto de una rebanada de pay de limón"
               class="promotions__card__image"
             />
+            </figure>
+            
             <h3 class="promotions__card__title">Pay de Limón</h3>
             <p class="promotions__card__paragraph paragraph">
               Ácido y refrescante, para un final perfecto.
@@ -209,11 +218,14 @@
             <span class="promotions__card__price">C$50.00</span>
           </div>
           <div class="promotions__card">
-            <img
+            <figure class="promotions__card__figure__image">
+              <img
               src="./assets/img/promotions/pan-jamon-queso.jpg"
               alt="Foto de un pancito con jamón y queso"
               class="promotions__card__image"
             />
+            </figure>
+            
             <h3 class="promotions__card__title">Pan de Jamón y Queso</h3>
             <p class="promotions__card__paragraph paragraph">
               Sabroso y nutritivo, para una comida completa.
@@ -240,8 +252,8 @@
                 alt="Imagen de Gatitos"
                 class="galery__card__img"
               />
-              <figcaption>Gatitos bebés de la cafetería</figcaption>
             </figure>
+            <p class="galery__card__ley">Gatitos bebés de la cafetería</p>
           </div>
           <div class="galery__card">
             <figure class="galery__card__fig">
@@ -250,8 +262,8 @@
                 alt="Imagen de un Gato acostado"
                 class="galery__card__img"
               />
-              <figcaption>Uno de nuestros gatos juguetón</figcaption>
             </figure>
+            <p class="galery__card__ley">Uno de nuestros gatos juguetón</p>
           </div>
           <div class="galery__card">
             <figure class="galery__card__fig">
@@ -260,8 +272,8 @@
                 alt="Cafeteria en la noche"
                 class="galery__card__img"
               />
-              <figcaption>Cafetería abierta hasta que oscurezca</figcaption>
             </figure>
+            <p class="galery__card__ley">Cafetería abierta hasta que oscurezca</p>
           </div>
           <div class="galery__card">
             <figure class="galery__card__fig">
@@ -270,8 +282,8 @@
                 alt="Imagen de amigos con tazas de café"
                 class="galery__card__img"
               />
-              <figcaption>Un café en grupo es mejor que solo</figcaption>
             </figure>
+            <p class="galery__card__ley">Un café en grupo es mejor que solo</p>
           </div>
         </div>
       </section>
@@ -282,41 +294,54 @@
 
         <div class="main__blog__container">
           <div class="blog__card">
-            <img
-              src="./assets/img/post/cumpleaños.jpg"
-              alt="Pasteles"
-              class="blog__card__img"
-            />
-            <h3 class="blog__card__title">Celebrando a lo máximo</h3>
-            <span class="blog__card__date">19/2/2024</span>
-            <p class="blog__card__paragraph paragraph">
-              El lunes fue el cumpleaños de la fundadora de "El Rincón Gatuno" y
-              con ello se celebró con promociones y combos solamente por ese
-              dia.
-            </p>
-            <a href="#" class="blog__card__see-more">Ver más...</a>
+            
+              <figure class="blog__card__figure">
+              <img
+                src="./assets/img/post/cumpleaños.jpg"
+                alt="Pasteles"
+                class="blog__card__img"
+              />
+            </figure>
+            <div class="blog__card__text">
+              <h3 class="blog__card__title">Celebrando a lo máximo</h3>
+              <span class="blog__card__date">19/2/2024</span>
+              <p class="blog__card__paragraph paragraph">
+                El lunes fue el cumpleaños de la fundadora de "El Rincón Gatuno" y
+                con ello se celebró con promociones y combos solamente por ese
+                dia.
+              </p>
+              <a href="#" class="blog__card__see-more">Ver más...</a>
+            </div>
           </div>
           <div class="blog__card">
-            <img
-              src="./assets/img/post/inauguración.jpg"
-              alt="Inauguración"
-              class="blog__card__img"
-            />
-            <h3 class="blog__card__title">Inauguración de la cafeteria</h3>
-            <span class="blog__card__date">10/12/2023</span>
-            <p class="blog__card__paragraph paragraph">
-              Se inaugura la primera cafeteria con tematica de gatos junto con
-              la acompañia de estos amigos felinos. Para celebrar, las primeras
-              100 personas tienen el 50% de descuento en todo el menú.
-            </p>
-            <a href="#" class="blog__card__see-more">Ver más...</a>
+            <figure class="blog__card__figure">
+              <img
+                src="./assets/img/post/inauguración.jpg"
+                alt="Inauguración"
+                class="blog__card__img"
+              />
+            </figure>
+            <div class="blog__card__text">
+              <h3 class="blog__card__title">Inauguración de la cafeteria</h3>
+              <span class="blog__card__date">10/12/2023</span>
+              <p class="blog__card__paragraph paragraph">
+                Se inaugura la primera cafeteria con tematica de gatos junto con
+                la acompañia de estos amigos felinos. Para celebrar, las primeras
+                100 personas tienen el 50% de descuento en todo el menú.
+              </p>
+              <a href="#" class="blog__card__see-more">Ver más...</a>
+            </div>
           </div>
         </div>
       </section>
 
       <!-- Sección corta con los horarios y locales -->
       <section class="main__local">
+        <h2 class="main__local__title">Local y Horario Disponibles</h2>
         <div class="main__local__container">
+          <figure class="local__cover">
+            <img src="./assets/img/local-img.jpg" alt="" class="local__cover__img">
+          </figure>
           <div class="local__card">
             <h3 class="local__title">Bo El Riguero</h3>
             <p class="local__horary paragraph">
@@ -331,34 +356,45 @@
 
     <!-- Footer Principal (Repetible) -->
     <footer class="footer">
-      <div class="footer__logo">
-        <img
-          src="./assets/icons/Logo.png"
-          alt="Logo de la Cafetería"
-          class="footer__logo__img"
-        />
+      <div class="footer__container">
+        <div class="footer__info">
+          <div class="info__column">
+            <h4>Menú</h4>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="./html/menu.html">Menú</a></li>
+              <li><a href="./html/gallery.html">Galeria</a></li>
+              <li><a href="./html/contact.html">Contacto</a></li>
+            </ul>
+          </div>
+          <div class="info__column">
+            <h4>Sobre Nosotros</h4>
+            <ul>
+              <li><a href="./html/about.html#seccion-historia">Nuestra Historia</a></li>
+              <li><a href="./html/about.html#seccion-valores">Nuestros Valores</a></li>
+              <li><a href="./html/about.html#seccion-elegirnos">¿Por qué elegirnos?</a></li>
+            </ul>
+          </div>
+          <div class="info__column">
+            <h4>Contáctanos</h4>
+            <ul>
+              <li>Dirección: 123 Calle Café, Ciudad</li>
+              <li>Teléfono: +505 1234-5678</li>
+              <li>Email: rincongatuno19@gmail.com</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__social">
+          <h4>Síguenos</h4>
+          <ul>
+            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+          </ul>
+        </div>
       </div>
-
-      <div class="footer__copy">
-        <p class="copyright">
-          © 2024 Cafetería El Rincón Gatuno. Todos los derechos reservados.
-        </p>
-      </div>
-      <div class="footer__social">
-        <ul class="redes-sociales">
-          <li>
-            <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
-          </li>
-          <li>
-            <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
-          </li>
-          <li>
-            <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
-          </li>
-          <li>
-            <a href="#" target="_blank"><i class="fab fa-tiktok"></i></a>
-          </li>
-        </ul>
+      <div class="copyright">
+        <p>&copy; 2024 Café Gatuno. Todos los derechos reservados.</p>
       </div>
     </footer>
 

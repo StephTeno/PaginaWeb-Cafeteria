@@ -97,7 +97,7 @@
     </header>
 
     <main class="main">
-      <section class="main__story">
+      <section class="main__story" id="seccion-historia">
         <div class="main__story__container">
           <figure class="main__story__figure">
             <img src="" alt="" class="story__figure__img">
@@ -139,7 +139,7 @@
         </div>
       </section>
 
-      <section class="main__values">
+      <section class="main__values" id="seccion-valores">
         <div class="main__values__container">
           <div class="main__values__text">
             <h2 class="vision__text__title">Nuestros valores</h2>
@@ -178,7 +178,7 @@
         </div>
       </section>
 
-      <section class="main__choose-us">
+      <section class="main__choose-us" id="seccion-elegirnos">
         <div class="main__choose-us__container">
           <div class="main__choose-us__text">
             <h2 class="choose-us__text__title">¿Por qué elegirnos?</h2>
@@ -234,34 +234,45 @@
 
     <!-- Footer Principal (Repetible) -->
     <footer class="footer">
-      <div class="footer__logo">
-        <img
-          src="../assets/icons/Logo.png"
-          alt="Logo de la Cafetería"
-          class="footer__logo__img"
-        />
+      <div class="footer__container">
+        <div class="footer__info">
+          <div class="info__column">
+            <h4>Menú</h4>
+            <ul>
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="./menu.html">Menú</a></li>
+              <li><a href="./gallery.html">Galeria</a></li>
+              <li><a href="./contact.html">Contacto</a></li>
+            </ul>
+          </div>
+          <div class="info__column">
+            <h4>Sobre Nosotros</h4>
+            <ul>
+              <li><a href="#seccion-historia">Nuestra Historia</a></li>
+              <li><a href="#seccion-valores">Nuestros Valores</a></li>
+              <li><a href="#seccion-elegirnos">¿Por qué elegirnos?</a></li>
+            </ul>
+          </div>
+          <div class="info__column">
+            <h4>Contáctanos</h4>
+            <ul>
+              <li>Dirección: 123 Calle Café, Ciudad</li>
+              <li>Teléfono: +505 1234-5678</li>
+              <li>Email: rincongatuno19@gmail.com</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__social">
+          <h4>Síguenos</h4>
+          <ul>
+            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+          </ul>
+        </div>
       </div>
-
-      <div class="footer__copy">
-        <p class="copyright">
-          © 2024 Cafetería El Rincón Gatuno. Todos los derechos reservados.
-        </p>
-      </div>
-      <div class="footer__social">
-        <ul class="redes-sociales">
-          <li>
-            <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
-          </li>
-          <li>
-            <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
-          </li>
-          <li>
-            <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
-          </li>
-          <li>
-            <a href="#" target="_blank"><i class="fab fa-tiktok"></i></a>
-          </li>
-        </ul>
+      <div class="copyright">
+        <p>&copy; 2024 Café Gatuno. Todos los derechos reservados.</p>
       </div>
     </footer>
 
