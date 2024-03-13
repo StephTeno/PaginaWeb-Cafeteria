@@ -161,34 +161,37 @@ a {
 /* Estilos para el footer */
 .footer {
   background-color: var(--Title-ElementImportant-color);
-  padding: 50px;
+  padding: 25px 0;
 }
 
-.footer__container{
+.footer__container {
   width: 100%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
   gap: 10px;
 }
 
-.footer__info{
+.footer__info {
   display: flex;
-  justify-content: space-evenly;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 25px;
 }
 
 .info__column {
-  padding: 0 20px;
+  margin: 0 50px;
 }
 
-.info__column h4, .footer__social h4 {
+.info__column h4,
+.footer__social h4 {
   color: var(--BackgroundPrincipal-color);
   font-size: 1.2rem;
   margin-bottom: 15px;
 }
 
 .info__column ul,
-.footer__social ul{
+.footer__social ul {
   list-style-type: none;
   padding: 0;
 }
@@ -198,6 +201,7 @@ a {
 }
 
 .info__column ul li a,
+.info__column ul li,
 .footer__social ul li a {
   color: rgb(214, 214, 214);
   text-decoration: none;
@@ -229,8 +233,6 @@ a {
   text-align: center;
   padding: 15px 0;
 }
-
-
 
 /*                              Header other pag                               */
 .cover__pag {
@@ -321,7 +323,7 @@ a {
 }
 
 /* Promotion Section */
-.main__promotions__container{
+.main__promotions__container {
   display: flex;
   flex-wrap: row;
   justify-content: space-between;
@@ -390,11 +392,12 @@ a {
   align-items: center;
   flex-direction: column;
 }
-.main__galery__title, .main__galery__description{
+.main__galery__title,
+.main__galery__description {
   color: white;
 }
 
-.main__galery__description{
+.main__galery__description {
   font-size: large;
   font-weight: 500;
   font-style: italic;
@@ -429,7 +432,7 @@ a {
   padding: 10px;
   text-align: center;
   opacity: 0;
-  transition: opacity 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .galery__card:hover .galery__card__ley {
@@ -473,13 +476,11 @@ a {
 }
 
 .blog__card__title,
-.blog__card__paragraph
-.blog__card__date
-.blog__card__see-more {
+.blog__card__paragraph .blog__card__date .blog__card__see-more {
   margin-top: 10px;
 }
 
-.blog__card__date{
+.blog__card__date {
   font-style: italic;
   color: #999;
 }
@@ -490,10 +491,9 @@ a {
   font-weight: bold;
 }
 
-.blog__card__see-more:hover{
+.blog__card__see-more:hover {
   color: var(--Title-ElementImportant-color);
 }
-
 
 /* LOCAL SECTION */
 .main__local {
@@ -504,11 +504,11 @@ a {
   align-items: center;
 }
 
-.main__local__title{
+.main__local__title {
   color: white;
 }
 
-.main__local__container{
+.main__local__container {
   width: 100%;
   height: 100%;
   display: flex;
@@ -517,17 +517,17 @@ a {
   align-items: center;
 }
 
-.local__cover{
+.local__cover {
   width: 25%;
   padding: 25px;
 }
 
-.local__cover__img{
+.local__cover__img {
   width: 100%;
   border-radius: 20px;
 }
 
-.local__card{
+.local__card {
   width: 50%;
   height: 50%;
   background-color: white;
@@ -538,6 +538,156 @@ a {
   justify-content: space-evenly;
 }
 
+/*                              MENU                                */
+.main__menus {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: auto;
+  padding: 50px;
+}
+
+.main__menus__text{
+  padding: 50px;
+  margin-bottom: 30px;
+  font-style: italic;
+}
+
+.menus__description {
+  font-family: 'Playfair Display';
+  font-size: 1.25rem;
+  color: var(--Title-ElementImportant-color);
+  line-height: 1.6;
+  text-align: center;
+}
+
+.menu__card__container {
+  margin: 20px 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.menu__card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px #835d4581;
+  overflow: hidden;
+  width: 300px;
+  margin-bottom: 20px;
+}
+
+.menu__card__img {
+  width: 100%;
+  height: 250px;
+  border-radius: 10px 10px 0 0;
+  object-fit: cover;
+}
+
+.menu__card__text {
+  padding: 20px;
+}
+
+.menu__card__title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.menu__card__paragraph {
+  font-size: 1rem;
+  color: #666;
+}
+
+.menu__card__price {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #ff7f50;
+}
+
+/*                             GALERY                              */
+
+.maing{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: auto;
+  padding: 50px;
+}
+
+.main__description{
+  padding: 50px;
+  margin-bottom: 30px;
+  font-style: italic;
+}
+
+.main__description__paragraph {
+  font-family: 'Playfair Display';
+  font-size: 1.25rem;
+  color: var(--Title-ElementImportant-color);
+  line-height: 1.6;
+  text-align: center;
+}
+
+.main__card__container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0;
+}
+
+.main__card {
+  width: 25%;
+  height: 25%;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.main__card__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.main__card:hover .main__card__img {
+  transform: scale(1.05);
+}
+
+/* Estilo adicional para el efecto de sombra y borde vintage */
+.main__card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0) 100%);
+  z-index: 1;
+  border-radius: 10px;
+}
+
+.main__card::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  z-index: 2;
+  border-radius: 10px;
+}
 
 /*                             CONTACT                              */
 
