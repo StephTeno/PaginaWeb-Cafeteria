@@ -96,16 +96,18 @@
       </section>
     </header>
 
-    <main class="main">
+    <main class="mainc">
 
       <section class="main__info">
         <div class="main__info__text">
-          <h2 class="main__info__title">¡Conversemos un poco!</h2>
-          <p class="main__info__paragraph paragraph">
-            ¿Quieres saber más de nosotros o una duda?
-            <br>
-            Puedes contactarnos por medio de nuestro correo eletronico para más comodidad, 
-          </p>
+          <div class="info__text">
+            <h2 class="main__info__title">¡Conversemos un poco!</h2>
+            <p class="main__info__paragraph paragraph">
+              ¿Quieres saber más de nosotros o una duda?
+              <br>
+              Puedes contactarnos por medio de nuestro correo eletronico para más comodidad, 
+            </p>
+          </div>
           <div class="main__info__btn__container">
             <div class="main__info__btn">
               <div class="main__info__btn__text">
@@ -120,13 +122,12 @@
               </div>
             </div>
           </div>
-
         </div>
 
         <div class="main__info__direction">
           <h3 class="main__info__direction__title">También puedes encontrarnos en la siguiente dirección</h3>
           <p class="main__info__direction__paragraph paragraph">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, aliquam.
+            123 Calle Café, Ciudad
           </p>
           <a href="" class="main__info__direction__btn buttom--square">
             <i class="fas fa-map"></i>
@@ -136,47 +137,56 @@
 
 
       <section class="main__form">
-        <form class="main__form__container">
+        <form class="main__form__container" action="./loading.html" method="get">
           <fieldset>
             <legend class="form__title">Llena este formulario si desea contactarnos</legend>
-            <div class="flex">
-              <p>
-                <label>
-                  <input class="form__input" type="text" placeholder="" required="">
-                  <span>Primer nombre</span>
-                </label>
-              </p>
-              <p>
-                <label>
-                    <input class="form__input" type="text" placeholder="" required="">
-                    <span>Primer apellido</span>
-                </label>
+            <div class="container__fom">
+              <div class="flex">
+                <p>
+                  <label>
+                    <input class="form__input" type="text" required
+                    pattern="[A-Za-z\s]+"
+                    title="Solo se permite letras y espacios">
+                    <span>Primer nombre</span>
+                  </label>
                 </p>
-            </div>
-
-            <p>
-              <label>
-                <input class="form__input" type="email" placeholder="" required="">
-                <span>Email</span>
+                <p>
+                  <label>
+                      <input class="form__input" type="text" required
+                      pattern="[A-Za-z\s]+"
+                      title="Solo se permite letras y espacios">
+                      <span>Primer apellido</span>
+                  </label>
+                  </p>
+              </div>
+  
+              <p>
+                <label>
+                  <input class="form__input" type="email" required
+                  pattern="[A-Za-z\s]+"
+                  title="Solo se permite letras y espacios">
+                  <span>Email</span>
+                </label>
+              </p>      
+            
+              <p>
+                <label>
+                  <input class="form__input" type="tel" required pattern="[578][0-9]{7}">
+                  <span>Número de celular</span>
               </label>
-            </p>      
-          
-            <p>
-              <label>
-                <input class="form__input" placeholder="" type="tel" required="">
-                <span>Número de celular</span>
-            </label>
-            </p>
-          
-            <p>
-              <label>
-                <textarea class="form__textarea" placeholder="" rows="3" required=""></textarea>
-                <span>Mensaje</span>
-            </label>
-            </p>
+              </p>
+            
+              <p>
+                <label>
+                  <textarea class="form__textarea" cols="3"
+                  rows="3" required></textarea>
+                  <span>Mensaje</span>
+              </label>
+              </p>
+              <button type="submit" class="btn">Enviar</button>
+            </div>
           </fieldset>
         
-          <button href="#" class="fancy">Enviar</button>
         </form>
       </section>
     </main>

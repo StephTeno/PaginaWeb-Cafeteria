@@ -864,134 +864,270 @@ html {
 
 /*                             CONTACT                              */
 
-/*                               FORM                               */
-/*
-.form {
-  text-transform: capitalize;
+.mainc{
   display: flex;
-  flex-direction: column;
-  gap: 10px;
-  max-width: 550px;
-  background-color: #355891;
-  padding: 20px;
-  border-radius: 10px;
-  position: relative;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 50dvh;
+  margin: 50px;
 }
 
-.message {
-  color: #355891;
+.main__info{
+  width: 45%;
+  margin: 20px;
+  height: 85%;
+  padding: 20px 50px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  border-radius: 10px;
+  border: 1px solid var(--Input-Back-color);
+  background-color: #966b5f37;
+}
+
+.main__info__text{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.main__info__btn__container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.main__info__btn{
+  border-radius: 10px;
+  border: 1px solid var(--Subtitle-Details-color);
+  background-color: rgba(126, 126, 126, 0.185);
+  padding: 20px 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.main__info__btn__text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.main__info__btn__text span:nth-of-type(1){
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.main__info__title,
+.main__info__direction__title{
+  font-family: 'Playfair Display';
+}
+
+.buttom--square{
+  color: #4d3728b6;
+  text-decoration: none;
+  width: 50px;
+  height: 50px;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #4d372830;
+}
+
+.buttom--square:hover{
+  color: white;
+  background-color: #4d3728b6;
+}
+
+
+/*                     FORM                               */
+
+.main__form{
+  max-width: 55%;
+  margin-left: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main__form__container  {
+  text-transform: capitalize;
+  max-width: 100%;
+  background-color: #7d533872;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.form__title{
+  font-family: 'Playfair Display';
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: white;
+}
+
+fieldset{
+  border: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.container__fom{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+.form__textarea {
+  color: var(--Subtitle-Details-color);
   font-size: 14px;
 }
 
 .flex {
   display: flex;
   width: 100%;
-  gap: 20px;
-  justify-content: c;
+  gap: 55px;
+}
+.flex .form__input{
+  width: 100%;
 }
 
-.form label {
+.main__form__container label {
   position: relative;
 }
 
-.form label .input {
-  width: 80%;
-  padding: 10px 10px 20px 10px;
+.form__input {
+  width: 92.5%;
+  padding: 15px;
   outline: 0;
-  border: 1px solid #355891;
+  border: 1px solid var(--Subtitle-Details-color);
   border-radius: 5px;
 }
 
-.form label .input + span {
+.form__input + span {
   position: absolute;
   left: 10px;
   top: 15px;
-  color: #355891;
+  color: var(--Subtitle-Details-color);
   font-size: 0.9em;
   cursor: text;
   transition: 0.3s ease;
 }
 
-.form label .input:placeholder-shown + span {
+.form__input:placeholder-shown + span {
   top: 15px;
   font-size: 0.9em;
 }
 
-.form label .input:focus + span,.form label .input:valid + span {
-  top: 30px;
+.form__input:focus + span,.form__input:valid + span {
+  top: 22px;
   font-size: 0.7em;
   font-weight: 600;
 }
 
-.form label .input:valid + span {
-  color: green;
+.form__input:valid + span {
+  color: var(--Input-Border-Active);
 }
 
-.mens {
-  width: 80%;
+.form__input:invalid{
+  color: var(--Input-Border-Error);
+}
+
+.form__textarea {
+  width: 95%;
   padding: 10px 10px 20px 10px;
   outline: 0;
-  border: 1px solid #355891;
+  border: 1px solid var(--Subtitle-Details-color);
   border-radius: 5px;
 }
 
-.form label .mens + span {
+.form__textarea + span {
   position: absolute;
   left: 10px;
-  top: 50px;
-  color: #355891;
+  top: 0px;
+  color: var(--Subtitle-Details-color);
   font-size: 0.9em;
   cursor: text;
   transition: 0.3s ease;
 }
 
-.form label .mens:placeholder-shown + span {
-  top: 40px;
+.form__textarea:placeholder-shown + span {
+  top: 0px;
   font-size: 0.9em;
 }
 
-.form label .mens:focus + span,.form label .mens:valid + span {
-  top: 50px;
+.form__textarea:focus + span,.form__textarea:valid + span {
+  top: 0px;
   font-size: 0.7em;
   font-weight: 600;
 }
 
-.form label .mens:valid + span {
-  color: green;
+.form__textarea:valid + span {
+  color: var(--Input-Border-Active);
 }
 
-.fancy {
+.form__textareat:invalid{
+  color: var(--Input-Border-Error);
+}
+
+.btn {
+  width: 100%;
   background-color: white;
-  border: 2px solid #355891;
+  border: 2px solid var(--Subtitle-Details-color);
   border-radius: 10px;
   box-sizing: border-box;
-  color: #355891;
+  color: var(--Subtitle-Details-color);
   cursor: pointer;
   letter-spacing: 2px;
   padding: 8px 30px;
   text-align: center;
   transition: all 0.3s ease-in-out;
-}
-
-.fancy .text {
   font-size: 16px;
   line-height: 16px;
   transition: all 0.3s ease-in-out;
-  color: #355891;
 }
 
-.fancy:hover {
-  color: #355891;
-  background: #5f82a9;
-}
-
-.fancy:hover::before {
-  width: 1.5rem;
-  background: #355891;
-}
-
-.fancy:hover .text {
+.btn:hover {
   font-weight: bold;
   color: white;
+  background: var(--Subtitle-Details-color);
 }
-*/
+
+.btn:hover::before {
+  width: 1.5rem;
+  background: var(--Title-ElementImportant-color);
+}
+
+
+/*                             LOADING                              */
+
+.main__loading{
+  height: 70dvh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main__loading__title{
+  font-family: 'Playfair Display';
+  font-weight: 900;
+  font-size: 3rem;
+  color: var(--Subtitle-Details-color);
+}
+
+.loading{
+  width: 70%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loading__img{
+  object-fit: cover;
+}
