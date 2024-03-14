@@ -28,6 +28,10 @@ a {
   --Text-Information-font: "Lato";
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /*                             HEADER                             */
 .hero {
   display: flex;
@@ -287,7 +291,6 @@ a {
 .main__promotions__container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  height: 50dvh;
   padding: 20px;
   gap: 15px;
 }
@@ -325,7 +328,8 @@ a {
 /* Promotion Section */
 .main__promotions__container {
   display: flex;
-  flex-wrap: row;
+  flex-wrap: wrap;
+  flex-direction: row;
   justify-content: space-between;
   padding: 20px;
 }
@@ -499,9 +503,6 @@ a {
 .main__local {
   height: 50dvh;
   background-color: var(--Subtitle-Details-color);
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .main__local__title {
@@ -547,14 +548,14 @@ a {
   padding: 50px;
 }
 
-.main__menus__text{
+.main__menus__text {
   padding: 50px;
   margin-bottom: 30px;
   font-style: italic;
 }
 
 .menus__description {
-  font-family: 'Playfair Display';
+  font-family: "Playfair Display";
   font-size: 1.25rem;
   color: var(--Title-ElementImportant-color);
   line-height: 1.6;
@@ -610,7 +611,7 @@ a {
 
 /*                             GALERY                              */
 
-.maing{
+.maing {
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -618,21 +619,21 @@ a {
   padding: 50px;
 }
 
-.main__description{
+.main__description {
   padding: 50px;
   margin-bottom: 30px;
   font-style: italic;
 }
 
 .main__description__paragraph {
-  font-family: 'Playfair Display';
+  font-family: "Playfair Display";
   font-size: 1.25rem;
   color: var(--Title-ElementImportant-color);
   line-height: 1.6;
   text-align: center;
 }
 
-.main__card__container{
+.main__card__container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -666,19 +667,23 @@ a {
 
 /* Estilo adicional para el efecto de sombra y borde vintage */
 .main__card::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(45deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0) 100%);
+  background: linear-gradient(
+    45deg,
+    rgba(0, 0, 0, 0.2) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
   z-index: 1;
   border-radius: 10px;
 }
 
 .main__card::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -690,30 +695,42 @@ a {
 }
 
 /*                              ABOUT                               */
-.maina{
-  width: 100%;
-  height: 50dvh;
+.maina {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
   margin: 50px;
+}
+
+.main__story,
+.main__mission,
+.main__vision {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 3.5em;
 }
 
 .main__story__container,
 .main__mission__container,
-.main__vision__container{
-  position: relative;
+.main__vision__container {
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
-  text-align: center;
-  font-family: 'Playfair Display';
+  margin: 25px;
 }
 
 .main__story__figure,
 .main__mission__figure,
-.main__vision__figure{
-  width: 30%;
-  height: 20%;
-  padding: 20px;
+.main__vision__figure {
+  width: 40%;
 }
+
 
 .main__mission__figure{
   order: 1;
@@ -721,30 +738,128 @@ a {
 
 .story__figure__img,
 .mission__figure__img,
-.vision__figure__img{
+.vision__figure__img {
+  width: 100%;
   object-fit: cover;
-  width: 70%;
 }
 
 .main__story__text,
 .main__mission__text,
 .main__vision__text {
+  border-radius: 10px;
+  border: 1px solid var(--Title-ElementImportant-color);
   text-align: start;
-  max-width: 50%;
+  row-gap: 1.5rem;
+  font-family: 'Playfair Display';
+  color: var(--Subtitle-Details-color);
+  padding: 2em;
 }
 
 .story__text__title,
 .mission__text__title,
 .vision__text__title {
-  font-size: 3rem;
-  margin-bottom: 20px;
+  font-size: 2rem;
+  line-height: 2.5rem;
 }
 
-.story__text__paragraph, 
-.mission__text__paragraph, 
-.vision__text__paragraph{
-  font-size: 1.25rem;
-  margin-bottom: 30px;
+.story__text__paragraph,
+.mission__text__paragraph,
+.vision__text__paragraph {
+  font-size: 1.5rem;
+  text-align: start;
+}
+
+.main__values{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 50dvh;
+  background-color: var(--Subtitle-Details-color);
+  color: white;
+}
+
+.vision__text__title,
+.choose-us__text__title{
+  text-align: center; 
+  font-size: 2rem;
+  line-height: 2.5rem;
+  font-family: 'Playfair Display';
+}
+
+.values__card__container,
+.choose-us__card__container{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  gap: 15px;
+}
+
+.values__card,
+.choose-us__card{
+  border-radius: 10px;
+  border: 1px solid var(--Title-ElementImportant-color);
+  width: 15%;
+  height: 210px;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.values__card__paragraph,
+.choose-us__card__paragraph{
+  text-align: justify;
+}
+
+.main__choose-us{
+  margin: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.choose__content{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.main__choose-us__figure{
+  width: 30%;
+}
+.choose__figure__img{
+  width: 100%;
+  object-fit: cover;
+}
+
+.main__mingallery{
+  background-color: var(--Input-Back-color);
+  padding: 20px 150px;
+}
+
+.main__mingallery__container{
+  width: 100%;
+  display: flex;
+}
+
+.main__mingallery__figure{
+  width: 30%;
+  height: 300px;
+  margin: 0;
+}
+
+.main__mingallery__img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /*                             CONTACT                              */
