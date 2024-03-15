@@ -1471,11 +1471,17 @@ fieldset {
     width: 70%;
     margin: 0;
     height: auto;
-    padding: 10px 50px 50px;
+    padding-bottom: 50px ;
+  }
+
+  .main__info__btn__container{
+    display: flex;
+    justify-content: center;
   }
 
   .main__info__btn {
     border: 0;
+    text-align: center;
   }
 
   .buttom--square {
