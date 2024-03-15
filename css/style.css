@@ -1176,7 +1176,7 @@ fieldset {
   justify-content: center;
 }
 
-.menu__img1{
+.menu__img1 {
   display: none;
 }
 
@@ -1191,8 +1191,8 @@ fieldset {
   }
 
   .navBar__nav-menu-item-link:active,
-  .button-btn:active{
-    background:rgba(129, 41, 3, 0.315);
+  .button-btn:active {
+    background: rgba(129, 41, 3, 0.315);
     width: 100%;
     text-align: center;
   }
@@ -1234,11 +1234,11 @@ fieldset {
     font-size: 1.25rem;
   }
 
-  .menu__img{
+  .menu__img {
     display: none;
   }
 
-  .menu__img1{
+  .menu__img1 {
     display: block;
   }
 
@@ -1262,13 +1262,13 @@ fieldset {
   .main__galery__description {
     text-align: center;
     padding: 20px;
-}
+  }
 
   .main__galery__container {
     flex-direction: column;
     justify-content: space-around;
   }
-  
+
   .galery__card {
     width: 100%;
   }
@@ -1276,11 +1276,11 @@ fieldset {
   .main__blog {
     height: auto;
   }
-  
+
   .main__blog__container {
     flex-direction: column;
   }
-  
+
   .blog__card {
     width: 90%;
   }
@@ -1288,7 +1288,7 @@ fieldset {
   .main__local {
     height: 40dvh;
   }
-  
+
   .local__cover {
     width: 50%;
     padding: 0px;
@@ -1308,7 +1308,7 @@ fieldset {
     justify-content: center;
     gap: 10px;
   }
-  
+
   .info__column h4,
   .footer__social h4 {
     margin-bottom: 0px;
@@ -1323,12 +1323,12 @@ fieldset {
   .maing {
     padding: 0px;
   }
-  
+
   .main__description {
     padding: 50px;
     margin-bottom: 0px;
   }
-  
+
   .main__card__container {
     display: flex;
     flex-direction: row;
@@ -1336,9 +1336,86 @@ fieldset {
     justify-content: center;
     align-items: center;
   }
-  
+
   .main__card {
     width: 70%;
   }
+
+  .maina {
+    margin: 25px;
+  }
+
+  .main__story,
+  .main__mission,
+  .main__vision {
+    margin: 1.5em;
+    margin: 50px 0;
+  }
+
+  .main__story__container,
+  .main__mission__container,
+  .main__vision__container {
+    flex-direction: column;
+    margin: 25px;
+  }
+
+  .main__story__figure,
+  .main__mission__figure,
+  .main__vision__figure {
+    width: 65%;
+  }
+
+  .main__mission__figure {
+    order: 0;
+  }
+
+  .main__story__text,
+  .main__mission__text,
+  .main__vision__text {
+    border: 0;
+    text-align: center;
+  }
+
+  .story__text__paragraph,
+  .mission__text__paragraph,
+  .vision__text__paragraph {
+    text-align: justify;
+  }
+
+  .main__values {
+    height: auto;
+    width: 100%;
+    padding-bottom: 50px;
+  }
+
+  .values__card__container,
+  .choose-us__card__container {
+    padding: 0px;
+  }
+
+  .values__card,
+  .choose-us__card {
+    width: 35%;
+    height: 220px;
+    justify-content: center;
+  }
+
+  .choose-us__card {
+    width: 40%;
+  }
+  .choose__content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .main__mingallery {
+    background-color: var(--Input-Back-color);
+    padding: 20px;
+  }
   
+  .main__mingallery__figure {
+    width: 70%;
+    height: 150px;
+  }
 }
