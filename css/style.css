@@ -1319,4 +1319,26 @@ fieldset {
     margin-bottom: 15px;
     text-align: center;
   }
+
+  .maing {
+    padding: 0px;
+  }
+  
+  .main__description {
+    padding: 50px;
+    margin-bottom: 0px;
+  }
+  
+  .main__card__container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .main__card {
+    width: 70%;
+  }
+  
 }
