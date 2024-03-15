@@ -1469,11 +1469,11 @@ fieldset {
     height: auto;
     justify-content: center;
     align-items: center;
-    gap: 100px;
+    gap: 50px;
   }
 
   .main__info {
-    width: 100%;
+    width: 95%;
     margin: 0px;
     height: auto;
     padding: 20px;
@@ -1502,7 +1502,8 @@ fieldset {
   }
   
   .main__form {
-    max-width: 150%;
+    max-width: 100dvw;
+    padding: 0;
     margin: 0px;
   }
 
