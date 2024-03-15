@@ -1167,7 +1167,7 @@ fieldset {
 }
 
 .hero__navBar__dropdown li a {
-  color: var(--BackgroundPrincipal-color);
+  color: var(--Subtitle-Details-color);
 }
 
 .hero__navBar__dropdown .button-btn {
@@ -1207,7 +1207,7 @@ fieldset {
 
   /*Hero del Index*/
   .hero__cover {
-    height: 55dvh;
+    height: 60dvh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1256,9 +1256,25 @@ fieldset {
   }
 
   .promotions__card {
-    margin: 25px;
-    width: 250px;
-    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    width: 80%;
+    height: auto;
+  }
+  
+  .promotions__card__figure__image {
+    width: 100%;
+    height: 140px; /* Altura de la imagen */
+    overflow: hidden;
+  }
+
+  
+  .promotions__card__image {
+    width: 100%;
+    height: 100%;
   }
 
   .main__galery {
