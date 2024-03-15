@@ -1512,4 +1512,21 @@ fieldset {
     width: 92%;
     gap: 50px;
   }
+
+  .main__loading {
+    height: 100dvh;
+  }
+  
+  .main__loading__title {
+    font-size: 2rem;
+  }
+  
+  .loading {
+    width: 80%;
+    height: 70%;
+  }
+  
+  .loading__img {
+    width: 100%;
+  }
 }
