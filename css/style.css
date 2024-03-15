@@ -1368,7 +1368,7 @@ fieldset {
   .main__story,
   .main__mission,
   .main__vision {
-    margin: 1.5em;
+    margin: 1em;
     margin: 50px 0;
   }
 
@@ -1376,7 +1376,7 @@ fieldset {
   .main__mission__container,
   .main__vision__container {
     flex-direction: column;
-    margin: 25px;
+    margin: 10px;
   }
 
   .main__story__figure,
@@ -1400,6 +1400,7 @@ fieldset {
   .mission__text__paragraph,
   .vision__text__paragraph {
     text-align: justify;
+    font-size: 1.05rem;
   }
 
   .main__values {
