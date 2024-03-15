@@ -63,7 +63,7 @@ html {
   gap: 50px;
 }
 
-.hero__navBar__nav .navBar__nav-menu {
+.hero__navBar__nav .navBar__nav-menu{
   list-style: none;
   display: inherit;
   gap: inherit;
@@ -99,6 +99,13 @@ html {
 
 .button-btn:hover::before {
   background-color: var(--Button-CallToAction-color);
+}
+
+.toggle-btn{
+  color: var(--Subtitle-Details-color);
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: none;
 }
 
 /* Header del index*/
@@ -1130,4 +1137,62 @@ fieldset{
 
 .loading__img{
   object-fit: cover;
+}
+
+/*dopdown menu*/
+.hero__navBar__dropdown{
+  position: absolute;
+  right: 1rem;
+  top: 60px;
+  height: 0;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  border-radius: 10px;
+  overflow: hidden;
+  color: var(--BackgroundPrincipal-color);
+  display: none;
+  transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  list-style: none;
+  left: 2rem;
+  width: unset;
+}
+
+.hero__navBar__dropdown.open{
+  height: 340px;
+}
+
+.hero__navBar__dropdown li{
+  padding: 0.8rem;
+  display: flex;
+  justify-content: center;
+}
+
+.hero__navBar__dropdown li a{
+  color: var(--BackgroundPrincipal-color);
+}
+
+.hero__navBar__dropdown .button-btn{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/*                      RESPONSIVIDAD                   */
+
+@media (max-width: 800px) {
+  .hero__navBar__nav{
+    display: none;
+  }
+  .hero__navBar{
+    justify-content: space-between;
+  }
+
+  .toggle-btn{
+    display: block;
+  }
+
+  .hero__navBar__dropdown{
+    display: block;
+  }
+
 }
