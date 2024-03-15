@@ -1030,7 +1030,7 @@ fieldset {
 
 .form__input:focus + span,
 .form__input:valid + span {
-  top: 22px;
+  top: 20px;
   font-size: 0.7em;
   font-weight: 600;
 }
@@ -1054,7 +1054,7 @@ fieldset {
 .form__textarea + span {
   position: absolute;
   left: 10px;
-  top: 0px;
+  top: -5px;
   color: var(--Subtitle-Details-color);
   font-size: 0.9em;
   cursor: text;
@@ -1417,5 +1417,32 @@ fieldset {
   .main__mingallery__figure {
     width: 70%;
     height: 150px;
+  }
+
+  .mainc {
+    flex-direction: column;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .main__info {
+    width: 80%;
+    height: auto;
+    padding: 10px 50px 50px;
+  }
+
+  .main__info__btn {
+    border: 0;
+  }
+
+  .buttom--square {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .main__form {
+    max-width: 100%;
+    margin: 0px;
   }
 }
