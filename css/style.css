@@ -1459,16 +1459,28 @@ fieldset {
     height: 90px;
   }
 
+
   .mainc {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
     flex-direction: column;
     height: auto;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 100px;
+  }
+
+  .main__info {
+    width: 100%;
+    margin: 0px;
+    height: auto;
+    padding: 20px;
   }
   
-  .main__info {
-    width: 70%;
+  .main__info__text{
+    width: 100%;
     margin: 0;
     height: auto;
     padding-bottom: 50px ;
@@ -1490,7 +1502,7 @@ fieldset {
   }
   
   .main__form {
-    max-width: 110%;
+    max-width: 150%;
     margin: 0px;
   }
 
