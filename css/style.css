@@ -1637,19 +1637,21 @@ fieldset {
     height: 250px;
   }
 
+  
   .main__galery__container {
     flex-direction: row;
     justify-content: center;
   }
 
   .galery__card {
-    width: 50%;
+    width: 20%;
   }
 
   .main__blog__container {
     flex-direction: row;
   }
 
+  
   .blog__card {
     flex-direction: column;
     width: 45%;
@@ -1728,12 +1730,47 @@ fieldset {
   }
   
 .menu__carta-item {
-  width: 40%;
-  padding: 25px;
+  width: 30%;
+  padding: 15px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
+}
+
+.main__galery{
+  height: auto;
+}
+
+.main__galery__container {
+  height: auto;
+}
+
+.main__blog{
+  height: auto;
+}
+
+.choose-us__card {
+  font-size: 1rem;
+  width: 30%;
+  height: auto;
+  justify-content: space-around;
+}
+
+.values__card{
+  font-size: .8rem;
+  width: 20%;
+  height: 20%;
+}
+
+.main__mingallery {
+  width: 70%;
+  height: auto;
+}
+
+.main__mingallery__figure {
+  width: 90%;
+  height: 150px;
 }
 
   .mainc {
@@ -1750,7 +1787,7 @@ fieldset {
 
   .main__form {
     max-width: 55%;
-    margin-left: 150px;
+    margin-left: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
