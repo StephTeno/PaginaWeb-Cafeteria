@@ -1183,7 +1183,7 @@ fieldset {
 
 /*                      RESPONSIVIDAD                   */
 
-@media (max-width: 1024px){
+@media (max-width: 800px){
   .hero__navBar__nav {
     display: none;
   }
@@ -1533,7 +1533,16 @@ fieldset {
   }
 }
 
-@media (min-width: 750px) and (max-width: 1100px){
+@media (min-width: 765px) and (max-width: 1100px){
+  .hero__cover {
+    height: calc(60dvh + 80px);
+    padding: 25px;
+  }
+
+  .hero__cover__texts{
+    width: 80%;
+  }
+
   .footer__container {
     width: 100%;
     height: 250px;
@@ -1614,8 +1623,8 @@ fieldset {
   }
 }
 
-@media (min-width: 1140px) and (max-width: 2000px){
-  
+@media (min-width: 1139px) and (max-width: 2000px){
+
   .mainc {
     width: 100%;
     display: flex;
