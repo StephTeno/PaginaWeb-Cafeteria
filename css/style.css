@@ -40,8 +40,7 @@ html {
 
 .hero__navBar {
   background-color: transparent;
-  height: 65px;
-  min-height: 70px;
+  height: auto;
   padding: 5px 40px;
   display: flex;
   align-items: center;
@@ -54,7 +53,7 @@ html {
 }
 
 .hero__navBar__logo .navBar__logo-link-img {
-  width: 70px;
+  width: 50px;
 }
 
 .hero__navBar__nav {
@@ -111,7 +110,7 @@ html {
 /* Header del index*/
 
 .hero__cover {
-  height: 60dvh;
+  height: 70dvh;
   background-image: url(../assets/img/banner/index-img.jpg); /* Imagen */
   background-color: #00000037; /* Color */
   background-blend-mode: multiply; /* Efecto */
@@ -123,7 +122,12 @@ html {
 
 .hero__cover__texts {
   width: 50%;
+  height: 70%;
   padding: 0 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+
 }
 
 .cover__title {
@@ -133,24 +137,24 @@ html {
 }
 
 .cover__slogan {
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   color: #e0c1b9;
 }
 
 .cover__description {
   color: white;
   padding: 0;
-  font-size: 1.35rem;
-  margin-bottom: 60px;
+  font-size: 1rem;
 }
 
 .cover__btnContact {
+  width: 50%;
   outline: none;
   color: #daa06d;
-  padding: 0.5em 5em;
+  padding: 0.2em 5em;
   text-align: center;
   border: 2px dashed #daa06d;
-  border-radius: 15px;
+  border-radius: 10px;
   background-color: #eaddca;
   box-shadow: 0 0 0 4px #eaddca, 2px 2px 4px 2px rgba(0, 0, 0, 0.5);
   transition: 0.1s ease-in-out, 0.4s color;
@@ -297,9 +301,8 @@ html {
 
 .main__menu__container,
 .main__promotions__container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 15px;
+  display: flex;
+  gap: 5px;
 }
 
 .main__menu__title,
@@ -313,18 +316,21 @@ html {
 }
 
 .menu__img {
-  width: 100%;
+  width: 50%;
+  height: 50%;
   border-radius: 10px;
 }
 
 .menu__carta {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
 
 .menu__carta-item {
+  width: 40%;
   padding: 25px;
   display: flex;
   flex-direction: column;
@@ -342,19 +348,23 @@ html {
 }
 
 .promotions__card {
-  flex: 0 1 calc(20% - 20px); /* Ajusta el tamaño de cada promoción según el espacio disponible */
-  margin-bottom: 20px;
+  width: 25%;
+  height: 20%;
+  margin: 10px 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   background-color: #ffffff;
   border-radius: 10px;
   background-color: #eaddca;
   box-shadow: 0 0 0 4px #eaddca, 2px 2px 4px 2px rgba(0, 0, 0, 0.5);
   border: 2px dashed #daa06d;
-  padding: 30px;
+  padding: 20px;
   transition: all 0.3s ease;
 }
 
 .promotions__card__figure__image {
-  height: 250px; /* Altura de la imagen */
+  height: 100px; /* Altura de la imagen */
   overflow: hidden;
 }
 
@@ -1183,7 +1193,7 @@ fieldset {
 
 /*                      RESPONSIVIDAD                   */
 
-@media (max-width: 800px){
+@media (max-width: 767px){
   .hero__navBar__nav {
     display: none;
   }
@@ -1208,7 +1218,7 @@ fieldset {
 
   /*Hero del Index*/
   .hero__cover {
-    height: calc(60dvh + 80px);
+    height: 90dvh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1217,22 +1227,26 @@ fieldset {
 
   .hero__cover__texts {
     width: 100%;
+    height: 80%;
     padding: 0px 10px;
+    justify-content: space-between;
+    align-items: center;
+
   }
 
   .cover__title {
     font-weight: bolder;
-    font-size: 1.8rem;
+    font-size: 1.7rem;
     color: #ffffff;
   }
 
   .cover__slogan {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     color: #e0c1b9;
   }
 
   .cover__description {
-    font-size: 1rem;
+    font-size: .9rem;
   }
 
   .menu__img {
@@ -1263,12 +1277,11 @@ fieldset {
     align-items: center;
     gap: 50px;
     width: 80%;
-    height: auto;
+    height: 20%;
   }
   
   .promotions__card__figure__image {
-    width: 100%;
-    height: 140px; /* Altura de la imagen */
+    height: 40%; /* Altura de la imagen */
     overflow: hidden;
   }
 
@@ -1276,6 +1289,7 @@ fieldset {
   .promotions__card__image {
     width: 100%;
     height: 100%;
+    object-fit: cover;
   }
 
   .main__galery {
@@ -1533,9 +1547,84 @@ fieldset {
   }
 }
 
-@media (min-width: 765px) and (max-width: 1100px){
+@media (min-width: 765px) and (max-width: 1023px){
+  .hero__navBar__nav {
+    display: none;
+  }
+  .hero__navBar {
+    justify-content: space-between;
+  }
+
+  .navBar__nav-menu-item-link:active,
+  .button-btn:active {
+    background: rgba(129, 41, 3, 0.315);
+    width: 100%;
+    text-align: center;
+  }
+
+  .toggle-btn {
+    display: block;
+  }
+
+  .hero__navBar__dropdown {
+    display: block;
+  }
+
+  /*Hero del Index*/
   .hero__cover {
-    height: calc(60dvh + 80px);
+    height: 90dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .hero__cover__texts {
+    width: 100%;
+    height: 80%;
+    padding: 0px 10px;
+    justify-content: space-between;
+    align-items: center;
+
+  }
+
+  .cover__title {
+    font-weight: bolder;
+    font-size: 1.7rem;
+    color: #ffffff;
+  }
+
+  .cover__slogan {
+    font-size: 1.1rem;
+    color: #e0c1b9;
+  }
+
+  .cover__description {
+    font-size: .9rem;
+  }
+
+  .menu__img {
+    display: none;
+  }
+
+  .menu__img1 {
+    display: block;
+    width: 100%;
+  }
+
+  .main__menu__container,
+  .main__promotions__container {
+    flex-direction: row;
+  }
+
+  .promotions__card{
+    margin: 15px;
+    justify-content: space-around;
+    height: 330px;
+  }
+
+  .hero__cover {
+    height: auto;
     padding: 25px;
   }
 
@@ -1623,7 +1712,29 @@ fieldset {
   }
 }
 
-@media (min-width: 1139px) and (max-width: 2000px){
+@media (min-width: 1024px) and (max-width: 2000px){
+  .menu__img {
+    width: 50%;
+    height: 50%;
+    border-radius: 10px;
+  }
+  
+  .menu__carta {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+.menu__carta-item {
+  width: 40%;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 
   .mainc {
     width: 100%;
