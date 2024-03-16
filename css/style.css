@@ -1207,7 +1207,7 @@ fieldset {
 
   /*Hero del Index*/
   .hero__cover {
-    height: 60dvh;
+    height: calc(60dvh + 80px);
     display: flex;
     align-items: center;
     justify-content: center;
